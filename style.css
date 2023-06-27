@@ -38,7 +38,25 @@ header{
 header > h1{
     font-size: 12rem;
 }
-  
+/*
+header > nav > button{
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: -1em;
+    padding: 1em;
+    font-size: 1.8em;
+    font-family: 'Fasthand', cursive;
+    transition: 0.4s;
+}
+header > nav > button:hover{
+    transform: translateY(-10%);
+}
+.btnActive{
+    border-bottom: 4px solid white;
+}
+ */ 
 main{
     margin: 2rem;
     padding: 0.5em;
@@ -49,9 +67,11 @@ main{
     border: 2px solid rgb(16, 16, 16);
 }
 
+.home{
+    animation: fadeIn 1.8s;
+}
 .home > img{
     width: 60%;
-    margin-bottom: -1em;
 }
 
 footer{
@@ -66,4 +86,16 @@ footer{
     html{
         font-size: 50%;
     }
+    .home > img{
+        width: 80%;
+    }
 }
+
+@keyframes fadeIn {
+    0%{
+         opacity: 0;
+    }
+    100%{ 
+        opacity: 1; 
+    }
+  }
