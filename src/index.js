@@ -31,7 +31,7 @@ function createMain(){
 }
 
 function createFooter(){
-    
+
     const footer = document.createElement("footer")
     const footerContent = document.createElement("p")
     footerContent.textContent = "Roy Joseph © 2023"

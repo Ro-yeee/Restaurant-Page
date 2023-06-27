@@ -1,5 +1,5 @@
 export default function PopulateWithHome(){
-    
+
     const main = document.getElementById("main")
     main.appendChild(createHome())
 }
