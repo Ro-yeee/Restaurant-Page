@@ -46,6 +46,7 @@ main{
     font-family: "Tangerine", cursive;
     background: rgba(0,0,0,0.6);
     border-radius: 4rem;
+    border: 2px solid rgb(16, 16, 16);
 }
 
 .home > img{
