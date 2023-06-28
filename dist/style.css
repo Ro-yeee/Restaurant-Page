@@ -79,6 +79,46 @@ main{
     width: 60%;
 }
 
+.menu{
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    animation: fadeIn 1.8s;
+}
+
+.menuItem{
+    display:flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    background: rgba(0,0,0,0.6);
+    border-radius: 4rem;
+    border: 2px solid rgb(16, 16, 16);
+}
+
+.itemCard{
+    width: 70%;
+    text-align: center;
+    font-family: 'Gruppo', sans-serif;
+}
+.itemCard > p{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.itemCard > img{
+    padding: 1rem;
+    width: 100%;
+    border: 2px solid white;
+    border-radius: 1em;
+}
+
+.itemPrice{
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+}
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -96,6 +136,7 @@ main{
     width: 100%;
     padding: 1rem;
     opacity: 90%;
+    border: 2px solid white;
 }
 
 footer{

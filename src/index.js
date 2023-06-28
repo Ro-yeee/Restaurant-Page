@@ -1,5 +1,6 @@
 import PopulateWithHome from "./home"
 import PopulateWithContact from "./contact"
+import PopulateWithMenu from "./menu"
 
 PopulateWebsite()
 
@@ -59,6 +60,7 @@ function createNav(){
         menuBtn.classList.add("btnActive")
         homeBtn.classList.remove("btnActive")
         contactBtn.classList.remove("btnActive")
+        PopulateWithMenu()
     }
 
     contactBtn.onclick = () =>{
@@ -85,7 +87,7 @@ function createFooter(){
 
     const footer = document.createElement("footer")
     const footerContent = document.createElement("p")
-    footerContent.textContent = "Roy Joseph © 2023"
+    footerContent.textContent = `Roy Joseph © ${new Date().getFullYear()}`
     footer.appendChild(footerContent)
     return footer
 }

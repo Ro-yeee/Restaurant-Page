@@ -10,10 +10,10 @@ function createContact() {
     contact.classList.add("contact")
 
     const phoneNumber = document.createElement("p")
-    phoneNumber.textContent = "☎  944707381338"
+    phoneNumber.textContent = "☎ 944707381338"
 
     const address = document.createElement("p")
-    address.textContent = "⛩️  24, UB City Mall, Vittal Mallya Rd, Bengaluru"
+    address.textContent = "⛩️ 24, UB City Mall, Vittal Mallya Rd, Bengaluru"
 
     const location = document.createElement("img")
     location.src = "./images/location.png"
