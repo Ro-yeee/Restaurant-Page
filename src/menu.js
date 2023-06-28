@@ -1,3 +1,4 @@
+// Module to create Menu section
 export default function PopulateWithMenu(){
 
     const main = document.getElementById("main")
@@ -28,9 +29,11 @@ function createMenu(){
 
 function createItem(itemName,itemPrice,location){
 
+    // menu item will contain the item card along with its price
     const menuItem = document.createElement("div")
     menuItem.classList.add("menuItem")
 
+    // Item Card will contain the picture and item name
     const itemCard = document.createElement("div")
     itemCard.classList.add("itemCard")
 

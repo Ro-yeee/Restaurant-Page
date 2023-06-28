@@ -1,7 +1,9 @@
+// Importing moudels for populating each section
 import PopulateWithHome from "./home"
 import PopulateWithContact from "./contact"
 import PopulateWithMenu from "./menu"
 
+// Populating the website for the first time
 PopulateWebsite()
 
 function PopulateWebsite(){
@@ -17,6 +19,7 @@ function PopulateWebsite(){
 
 }
 
+// Function to create Header
 function createHeader(){
 
     const header = document.createElement("header")
@@ -27,6 +30,7 @@ function createHeader(){
     return header
 }
 
+// Creating navbar with buttons and adding event listners
 function createNav(){
 
     const navBar = document.createElement("nav")
@@ -74,6 +78,7 @@ function createNav(){
     return navBar
 }
 
+// Function to create Main section . Other elemets will be populated inside of main
 function createMain(){
 
     const main = document.createElement("main")
@@ -83,6 +88,7 @@ function createMain(){
     return main
 }
 
+// Function to create Footer
 function createFooter(){
 
     const footer = document.createElement("footer")

@@ -1,3 +1,4 @@
+// Module to create Contact section
 export default function PopulateWithContact(){
 
     const main = document.getElementById("main")
@@ -6,6 +7,7 @@ export default function PopulateWithContact(){
 }
 
 function createContact() {
+    
     const contact = document.createElement("div")
     contact.classList.add("contact")
 
