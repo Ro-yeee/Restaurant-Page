@@ -84,6 +84,7 @@ main{
     display: flex;
     flex-direction: column;
     text-align: left;
+    gap: 1em;
     animation: fadeIn 1.8s;
 }
 
