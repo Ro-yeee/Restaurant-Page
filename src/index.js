@@ -9,7 +9,10 @@ function PopulateWebsite(){
     content.appendChild(createMain())
     content.appendChild(createFooter())
 
+    const hme = document.getElementById("homeBtn")
+    hme.classList.add("btnActive")
     PopulateWithHome()
+
 }
 
 function createHeader(){
@@ -18,7 +21,52 @@ function createHeader(){
     const title = document.createElement('h1')
     title.textContent ="Ratatouille"
     header.appendChild(title)
+    header.appendChild(createNav())
     return header
+}
+
+function createNav(){
+
+    const navBar = document.createElement("nav")
+
+    const homeBtn = document.createElement("button")
+    homeBtn.textContent = "Home"
+    homeBtn.setAttribute("id","homeBtn")
+   
+    const menuBtn = document.createElement("button")
+    menuBtn.textContent = "Menu"
+    menuBtn.setAttribute("id","menuBtn")
+   
+    const contactBtn = document.createElement("button")
+    contactBtn.textContent = "Contact"
+    contactBtn.setAttribute("id","contactBtn")
+
+    navBar.appendChild(homeBtn)
+    navBar.appendChild(menuBtn)
+    navBar.appendChild(contactBtn)
+
+    homeBtn.onclick = () =>{
+        if(homeBtn.classList.contains("btnActive")) return
+        homeBtn.classList.add("btnActive")
+        menuBtn.classList.remove("btnActive")
+        contactBtn.classList.remove("btnActive")
+    }
+
+    menuBtn.onclick = () =>{
+        if(menuBtn.classList.contains("btnActive")) return
+        menuBtn.classList.add("btnActive")
+        homeBtn.classList.remove("btnActive")
+        contactBtn.classList.remove("btnActive")
+    }
+
+    contactBtn.onclick = () =>{
+        if(contactBtn.classList.contains("btnActive")) return
+        contactBtn.classList.add("btnActive")
+        homeBtn.classList.remove("btnActive")
+        menuBtn.classList.remove("btnActive")
+    }
+
+    return navBar
 }
 
 function createMain(){
@@ -38,3 +86,4 @@ function createFooter(){
     footer.appendChild(footerContent)
     return footer
 }
+
