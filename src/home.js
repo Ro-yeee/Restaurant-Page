@@ -1,6 +1,7 @@
 export default function PopulateWithHome(){
 
     const main = document.getElementById("main")
+    main.textContent = ""
     main.appendChild(createHome())
 }
 

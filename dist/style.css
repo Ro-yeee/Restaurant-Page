@@ -62,6 +62,7 @@ header > nav > button:hover{
 }
  
 main{
+    max-width: 739px;
     margin: 2rem;
     padding: 0.5em;
     font-size: 4rem;
@@ -76,6 +77,25 @@ main{
 }
 .home > img{
     width: 60%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 2.5rem;
+    animation: fadeIn 1.8s;
+}
+.contact > p{
+    width: 100%;
+    padding: 1rem;
+}
+.contact > img{
+    width: 100%;
+    padding: 1rem;
+    opacity: 90%;
 }
 
 footer{

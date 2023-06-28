@@ -1,4 +1,5 @@
 import PopulateWithHome from "./home"
+import PopulateWithContact from "./contact"
 
 PopulateWebsite()
 
@@ -50,6 +51,7 @@ function createNav(){
         homeBtn.classList.add("btnActive")
         menuBtn.classList.remove("btnActive")
         contactBtn.classList.remove("btnActive")
+        PopulateWithHome()
     }
 
     menuBtn.onclick = () =>{
@@ -64,6 +66,7 @@ function createNav(){
         contactBtn.classList.add("btnActive")
         homeBtn.classList.remove("btnActive")
         menuBtn.classList.remove("btnActive")
+        PopulateWithContact()
     }
 
     return navBar
