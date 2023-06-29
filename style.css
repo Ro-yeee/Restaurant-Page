@@ -18,7 +18,9 @@ body{
     font-size: 1.6rem;
     font-family: 'Montserrat', cursive;
     color: white;
+    background-color: black;
     text-align: center;
+    height: 100svh;
 }
 
 .container {
@@ -26,8 +28,8 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 100dvh;
   height: 100vh;
+  height: 100svh;
 }
 
 header{
